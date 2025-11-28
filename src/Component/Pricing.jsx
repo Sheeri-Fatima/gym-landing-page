@@ -23,7 +23,7 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-20 bg-[#1a1a1a] text-white">
+    <section id="pricing" className="py-20 bg-gray-200 text-white">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
@@ -32,7 +32,7 @@ export default function Pricing() {
           viewport={{ once: true }}
           className="text-center text-4xl font-bold mb-14 text-[#ff4d4d]"
         >
-          Pricing Plans
+          <span className="text-black">Pricing</span> Plans
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -58,7 +58,7 @@ export default function Pricing() {
               <h3 className="text-3xl font-bold text-center text-[#f5f5f5] mb-4">
                 {plan.name}
               </h3>
-              
+
               <p className="text-center text-4xl font-extrabold text-[#ff4d4d] mb-6">
                 {plan.price}
               </p>

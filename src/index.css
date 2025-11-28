@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+a, button{
+    cursor: pointer;
+}
+/* venom spread overlay — put in globals.css or main stylesheet */
+.venom-overlay {
+  position: absolute;
+  inset: 0;                      /* fill the card */
+  background: #0b0b0b;           /* dark "venom" color */
+  clip-path: circle(0% at 50% 50%);
+  -webkit-clip-path: circle(0% at 50% 50%);
+  transition: clip-path 900ms cubic-bezier(.22,.9,.5,1),
+              -webkit-clip-path 900ms cubic-bezier(.22,.9,.5,1),
+              background 900ms ease;
+  opacity: 1;                    /* don't animate opacity — use clip-path */
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* When the card is hovered, grow the circle to cover the whole card */
+.group:hover .venom-overlay {
+  clip-path: circle(140% at 50% 50%);
+  -webkit-clip-path: circle(140% at 50% 50%);
+}
+
+
+/* Inactive bullets */
+.swiper-pagination-bullet {
+  background: #d1d5db !important; /* gray-300 */
+  opacity: 1 !important;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px !important;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background: #ef4444 !important; /* red-500 */
+  opacity: 1 !important;
+  
+}

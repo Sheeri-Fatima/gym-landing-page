@@ -9,19 +9,23 @@ import Trainers from './Component/Trainers'
 import Pricing from './Component/Pricing'
 import CTA from './Component/CTA'
 import Footer from './Component/Footer'
+import AboutUs from './Component/AboutUs'
+import ContactUs from './Component/ContactUs'
 
 const App = () => {
   return (
     <>
       <Navbar />
       <Hero />
+      <AboutUs />
       <Features />
-      <AboutGym />
+      {/* <AboutGym /> */}
       <Services />
       <Testimonials />
-      <Trainers />
+      {/* <Trainers /> */}
       <Pricing />
       <CTA />
+      <ContactUs />
       <Footer />
     </>
   )

@@ -4,7 +4,7 @@ export default function CTA() {
   return (
     <section
       id="cta"
-      className="py-24 px-4 bg-gradient-to-r from-[#ff4d4d] to-[#b30000] text-white text-center"
+      className="py-14 px-4 bg-gradient-to-r from-[#ff4d4d] to-[#b30000] text-white text-center"
     >
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
@@ -26,7 +26,7 @@ export default function CTA() {
         Join today and get a <span className="font-bold">7-Day Free Pass</span> — No commitment.
       </motion.p>
 
-      <motion.button
+      {/* <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         animate={{ scale: [1, 1.05, 1] }}
@@ -34,7 +34,7 @@ export default function CTA() {
         className="px-10 py-4 text-lg font-bold rounded-full bg-black text-[#ff4d4d] shadow-[0_0_20px_rgba(0,0,0,0.7)] hover:bg-[#1a1a1a] transition-all duration-300"
       >
         Join Now
-      </motion.button>
+      </motion.button> */}
     </section>
   );
 }

@@ -10,23 +10,57 @@ export default function Navbar() {
       <nav className="backdrop-blur-lg bg-white/40 dark:bg-gray-900/40 border-b border-white/10 dark:border-gray-800/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-
             {/* Logo */}
             <div className="flex items-center">
               <a href="#" className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center text-white font-bold shadow-md">G</div>
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center text-white font-bold shadow-md">
+                  G
+                </div>
                 <span className="sr-only">Gym Logo</span>
-                <span className="hidden sm:inline-block text-lg font-semibold text-gray-900 dark:text-white">PeakFit Gym</span>
+                <span className="hidden sm:inline-block text-lg font-semibold text-gray-900 dark:text-white">
+                  PeakFit Gym
+                </span>
               </a>
             </div>
 
             {/* Desktop menu */}
             <div className="hidden md:flex md:items-center md:space-x-6">
-              <a href="#" className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Home</a>
-              <a href="#features" className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Features</a>
-              <a href="#services" className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Services</a>
-              <a href="#trainers" className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Trainers</a>
-              <a href="#pricing" className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Pricing</a>
+              <a
+                href="#"
+                className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
+              >
+                Home
+              </a>
+              <a
+                href="#about"
+                className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
+              >
+                About
+              </a>
+              <a
+                href="#services"
+                className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
+              >
+                Services
+              </a>
+              <a
+                href="#testimonials"
+                className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
+              >
+                Testimonials
+              </a>
+              <a
+                href="#pricing"
+                className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
+              >
+                Pricing
+              </a>
+              <a
+                href="#contact"
+                className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
+              >
+                Contact
+              </a>
             </div>
 
             {/* Right CTA + Mobile button */}
@@ -85,15 +119,40 @@ export default function Navbar() {
         {/* Mobile menu panel */}
         <div
           className={`md:hidden transition-max-height duration-300 ease-in-out overflow-hidden ${
-            open ? 'max-h-60' : 'max-h-0'
+            open ? "max-h-60" : "max-h-0"
           }`}
         >
           <div className="px-4 pt-4 pb-6 space-y-3">
-            <a href="#" className="block text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900">Home</a>
-            <a href="#features" className="block text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900">Features</a>
-            <a href="#services" className="block text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900">Services</a>
-            <a href="#trainers" className="block text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900">Trainers</a>
-            <a href="#pricing" className="block text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900">Pricing</a>
+            <a
+              href="#"
+              className="block text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900"
+            >
+              Home
+            </a>
+            <a
+              href="#features"
+              className="block text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900"
+            >
+              Features
+            </a>
+            <a
+              href="#services"
+              className="block text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900"
+            >
+              Services
+            </a>
+            <a
+              href="#trainers"
+              className="block text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900"
+            >
+              Trainers
+            </a>
+            <a
+              href="#pricing"
+              className="block text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900"
+            >
+              Pricing
+            </a>
 
             <div className="pt-3">
               <a
