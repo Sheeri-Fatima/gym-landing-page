@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    name: "Aman Verma",
+    name: "Aman Dev",
     role: "Fitness Enthusiast",
     text: "This gym completely transformed my fitness journey! Trainers are super supportive and classes are fire!",
     image: "https://i.pravatar.cc/150?img=12",
